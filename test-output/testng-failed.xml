@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Parallel Testing]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="Default test(failed)">
+    <classes>
+      <class name="testcase_suite.UserRegistrationVerification">
+        <methods>
+          <include name="initializeHomePage"/>
+          <include name="navigateToRegistrationPage"/>
+          <include name="registeringUser"/>
+        </methods>
+      </class> <!-- testcase_suite.UserRegistrationVerification -->
+      <class name="testcase_suite.UserLoginAndFlightBookingVerification">
+        <methods>
+          <include name="loggingInUserWithInvalidData"/>
+          <include name="loggingInUserWithValidData"/>
+          <include name="initializeHomePage"/>
+        </methods>
+      </class> <!-- testcase_suite.UserLoginAndFlightBookingVerification -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Parallel Testing] -->
